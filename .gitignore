@@ -3,5 +3,3 @@
 !/local/**
 
 !.gitignore
-!.htaccess
-!urlrewrite.php
