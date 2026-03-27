@@ -1,0 +1,7 @@
+*
+!/local/
+!/local/**
+
+!.gitignore
+!.htaccess
+!urlrewrite.php
