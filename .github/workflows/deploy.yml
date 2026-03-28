@@ -14,14 +14,18 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/github_deploy
-          chmod 600 ~/github_deploy
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/github_deploy
+          chmod 600 ~/.ssh/github_deploy
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
       - name: Deploy on server
         run: |
-          ssh -p "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" << 'EOF'
+          ssh -i ~/.ssh/github_deploy \
+              -o UserKnownHostsFile=~/.ssh/known_hosts \
+              -o StrictHostKeyChecking=yes \
+              -p "${{ secrets.SSH_PORT }}" \
+              "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}" << 'EOF'
             set -e
             cd ~/public_html
             git pull origin main
