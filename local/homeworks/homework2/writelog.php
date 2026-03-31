@@ -9,7 +9,8 @@ $APPLICATION->SetTitle("Добавление в лог");
   </li>
 </ul>
 <?
-// ТУТ ДОБАВИТЬ СВОЮ ФУНКЦИЮ ДОБАВЛЕНИЯ В ЛОГ
+
+\App\Debug\Log::addLog('Текущая дата и время', 'log_custom', true);
 
 ?>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
