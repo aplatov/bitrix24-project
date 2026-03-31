@@ -2,10 +2,10 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Тестирование дебага");
 
-print_r('<pre>');
-print_r('$_SERVER: ');
-print_r($_SERVER);
-print_r('</pre>');
+// print_r('<pre>');
+// print_r('$_SERVER: ');
+// print_r($_SERVER);
+// print_r('</pre>');
 
 // print_r('<pre>');
 // print_r('var_dump($_SERVER): ');
