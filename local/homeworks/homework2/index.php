@@ -12,7 +12,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 ?>
 <h1 class="mb-3"><? $APPLICATION->ShowTitle() ?></h1>
 
-<h4 class="mb-3">Выполнение ДЗ:Создать файлы для ДЗ согласно репозиторию https://github.com/OtusTeam/bitrix24.
+<h4 class="mb-3">Выполнение ДЗ 2:Создать файлы для ДЗ согласно репозиторию https://github.com/OtusTeam/bitrix24.
   В нем написать код, который, при обращении к нему по HTTP, будет записывать в файл текущие дату и время.
   Написать и подключить собственный класс системного логгера, который будет переопределять форматирование строк лога - добавлять слово OTUS в каждую строку.</h4>
 <div>
@@ -25,7 +25,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 <h4 class="mb-3">Часть 1 - Logger</h4>
 <ul class="list-group">
   <li class="list-group-item">
-    <a href="/local/logs/log_custom.log">Файл лога из п1 ДЗ</a>
+    <a href="/local/Logs/log_custom.log">Файл лога из п1 ДЗ</a>
   </li>
   <li class="list-group-item">
     <a href="writelog.php">Добавление в лог из п1 ДЗ</a>
@@ -42,7 +42,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 <h4 class="mb-3 mt-5">Часть 2 - Exception</h4>
 <ul class="list-group">
   <li class="list-group-item">
-    <a href="/local/logs/exceptions.log">Файл лога из п2 ДЗ</a>
+    <a href="/local/Logs/exceptions.log">Файл лога из п2 ДЗ</a>
   </li>
   <li class="list-group-item">
     <a href="writeexception.php">Добавление в лог из п2 ДЗ</a>
