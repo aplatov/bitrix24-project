@@ -15,8 +15,8 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 <h4 class="mb-3">Выполнение ДЗ 2:Создать файлы для ДЗ согласно репозиторию https://github.com/OtusTeam/bitrix24.
   В нем написать код, который, при обращении к нему по HTTP, будет записывать в файл текущие дату и время.
   Написать и подключить собственный класс системного логгера, который будет переопределять форматирование строк лога - добавлять слово OTUS в каждую строку.</h4>
-Репозиторий : https://github.com/aplatov/bitrix24-project/tree/main
-Битрикс24 : https://cg460987.tw1.ru/bitrix/ логин: admin пароль: Yw78mP!#
+<p>Репозиторий :<a href="https://github.com/aplatov/bitrix24-project/tree/main"> https://github.com/aplatov/bitrix24-project/tree/main</a></p>
+Битрикс24 : <a href="https://cg460987.tw1.ru/bitrix/">https://cg460987.tw1.ru/bitrix/</a> логин: admin пароль: Yw78mP!#
 <div>
   Реализоано добавление в лог даты и времени, добавлена кастомизация вывода сообщения в системный лог исключений.
 </div>
@@ -24,7 +24,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 <br>
 <hr>
 
-<h4 class="mb-3">Часть 1 - записываем в файл текущие дату и время</h4>
+<h4 class=" mb-3">Часть 1 - записываем в файл текущие дату и время</h4>
 <ul class="list-group">
   <li class="list-group-item">
     <a href="/local/Logs/log_custom.log">Файл лога из п1 ДЗ</a>
