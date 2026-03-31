@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Добавление в лог");
 <ul class="list-group">
   <li class="list-group-item">
     <a href="/local/Logs/log_custom.log">Файл лога</a>,
-    в лог добавленно 'Открыта страница writelog.php'
+    в лог добавленно Текущая дата и время: <?= date('d.m.Y H:i:s'); ?>
   </li>
 </ul>
 <?
