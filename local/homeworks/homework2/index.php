@@ -15,14 +15,16 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 <h4 class="mb-3">Выполнение ДЗ 2:Создать файлы для ДЗ согласно репозиторию https://github.com/OtusTeam/bitrix24.
   В нем написать код, который, при обращении к нему по HTTP, будет записывать в файл текущие дату и время.
   Написать и подключить собственный класс системного логгера, который будет переопределять форматирование строк лога - добавлять слово OTUS в каждую строку.</h4>
+Репозиторий : https://github.com/aplatov/bitrix24-project/tree/main
+Битрикс24 : https://cg460987.tw1.ru/bitrix/ логин: admin пароль: Yw78mP!#
 <div>
-  Тут добавить описание того что и как было реализовано.
+  Реализоано добавление в лог даты и времени, добавлена кастомизация вывода сообщения в системный лог исключений.
 </div>
 <br>
 <br>
 <hr>
 
-<h4 class="mb-3">Часть 1 - Logger</h4>
+<h4 class="mb-3">Часть 1 - записываем в файл текущие дату и время</h4>
 <ul class="list-group">
   <li class="list-group-item">
     <a href="/local/Logs/log_custom.log">Файл лога из п1 ДЗ</a>
@@ -39,7 +41,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 </ul>
 
 
-<h4 class="mb-3 mt-5">Часть 2 - Exception</h4>
+<h4 class="mb-3 mt-5">Часть 2 - кастомизация вывода в Exception</h4>
 <ul class="list-group">
   <li class="list-group-item">
     <a href="/local/Logs/exceptions.log">Файл лога из п2 ДЗ</a>
@@ -51,7 +53,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
     <a href="clearexception.php">Очистить лог из п2 ДЗ</a>
   </li>
   <li class="list-group-item">
-    <a href="/bitrix/admin/fileman_file_edit.php?path=%2Flocal%2Fphp_interface%2Fsrc%2FOtus%2FDiag%2FFileExceptionHanlderLogCustom.php&full_src=Y">Файл с классом системного исключений</a>
+    <a href="/bitrix/admin/fileman_file_edit.php?path=%2Flocal%2FApp%2FDebug%2FLog.php&full_src=Y">Файл с классом </a>
   </li>
 </ul>
 
