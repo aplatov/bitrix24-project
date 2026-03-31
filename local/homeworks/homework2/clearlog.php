@@ -4,4 +4,4 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 \App\Debug\Log::cleanLog(
   'log_custom',
 );
-LocalRedirect('/locla/homeworks/homework2/');
+LocalRedirect('/local/homeworks/homework2/');
