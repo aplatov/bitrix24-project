@@ -25,7 +25,7 @@ class Log extends FileExceptionHandlerLog
    */
   public static function addLog($message, bool $clear = false, string $fileName = 'custom', $timeVersion = true): void
   {
-    $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/logs/' . $fileName;
+    $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/Logs/' . $fileName;
 
     if ($timeVersion) {
       $logFile .= '_' . date("d.m.Y");
@@ -48,7 +48,7 @@ class Log extends FileExceptionHandlerLog
 
   public static function cleanLog(string $fileName = 'custom')
   {
-    $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/logs/' . $fileName;
+    $logFile = $_SERVER["DOCUMENT_ROOT"] . '/local/Logs/' . $fileName;
     $logFile .= '.log';
     file_put_contents($logFile, '');
   }
