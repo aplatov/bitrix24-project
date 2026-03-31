@@ -13,7 +13,8 @@ $APPLICATION->SetTitle("Добавление в лог");
 \App\Debug\Log::addLog(
   'Текущая дата и время: ' . date('d.m.Y H:i:s'),
   false,
-  'log_custom'
+  'log_custom',
+  false
 );
 
 ?>
