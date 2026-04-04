@@ -16,7 +16,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
   В нем написать код, который, при обращении к нему по HTTP, будет записывать в файл текущие дату и время.
   Написать и подключить собственный класс системного логгера, который будет переопределять форматирование строк лога - добавлять слово OTUS в каждую строку.</h4>
 <p>Репозиторий :<a href="https://github.com/aplatov/bitrix24-project/tree/main"> https://github.com/aplatov/bitrix24-project/tree/main</a></p>
-Битрикс24 : <a href="https://cg460987.tw1.ru/bitrix/">https://cg460987.tw1.ru/bitrix/</a> логин: admin пароль: Yw78mP!#
+Битрикс24 : <a href="https://cg460987.tw1.ru/bitrix/">https://cg460987.tw1.ru/bitrix/</a>
 <div>
   Реализоано добавление в лог даты и времени, добавлена кастомизация вывода сообщения в системный лог исключений.
 </div>
