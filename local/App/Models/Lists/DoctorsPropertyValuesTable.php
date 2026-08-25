@@ -3,7 +3,7 @@
 namespace Models\Lists;
 
 use Bitrix\Main\Entity\ReferenceField;
-use Models\AbstractIblockPropertyValuesTable;
+use App\Models\AbstractIblockPropertyValuesTable;
 
 class DoctorsPropertyValuesTable extends AbstractIblockPropertyValuesTable
 {
