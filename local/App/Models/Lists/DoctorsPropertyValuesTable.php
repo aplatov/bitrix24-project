@@ -1,6 +1,6 @@
 <?php
 
-namespace Models\Lists;
+namespace App\Models;
 
 use Bitrix\Main\Entity\ReferenceField;
 use App\Models\AbstractIblockPropertyValuesTable;
