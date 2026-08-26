@@ -2,6 +2,8 @@
 
 require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php';
 
+
+
 use App\Models\Lists\DoctorsTable;
 
 global $APPLICATION;
@@ -549,6 +551,9 @@ $procedures = DoctorsTable::getAllProcedures();
   ?>
 
     <h1>Врачи</h1>
+    <h2 class="mb-3">Разработка простого приложения для работы со списками на D7</h2>
+    <p>Репозиторий :<a href="https://github.com/aplatov/bitrix24-project/tree/main"> https://github.com/aplatov/bitrix24-project/tree/main</a></p>
+    Битрикс24 : <a href="https://cg460987.tw1.ru/bitrix/">https://cg460987.tw1.ru/bitrix/</a>
 
     <?php if ($doctors): ?>
 
